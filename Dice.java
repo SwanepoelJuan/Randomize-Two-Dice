@@ -38,7 +38,7 @@ public class Dice extends JFrame implements MouseListener{
         northPanel.setLayout(flowLayout); // Set the layout of the North Panel (the panel added to the north side of the border layout)
         centerPanel.setLayout(flowLayout); // Set the layout of the Center Panel (the panel added to the center of the border layout)
         
-        northPanel.add(rollButton); // Add the Roll Button to the North Panel 
+        northPanel.add(rollButton); 
         rollButton.addMouseListener(this); // Add a Mouse Listener to the button (this can also be an Action Listener)
         
         mainPanel.add(northPanel, BorderLayout.NORTH); // Add the North Panel to the Main Panel
@@ -62,9 +62,9 @@ public class Dice extends JFrame implements MouseListener{
         centerPanel.revalidate(); // Revalidate the Center Panel
         
         mainPanel.remove(centerPanel); // Remove the Center Panel 
-        mainPanel.repaint(); // Repaint the Main Panel 
-        mainPanel.revalidate(); // Revalidate the Main Panel 
         
+        mainPanel.revalidate(); // Revalidate the Main Panel 
+
         this.repaint(); // Repaint the JFrame
         this.revalidate(); // Revalidate the JFrame
         
