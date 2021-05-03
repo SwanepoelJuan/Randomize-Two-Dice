@@ -56,13 +56,17 @@ public class Dice extends JFrame implements MouseListener{
     */
     public void setDice(int r1, int r2){
 
+
+        // I'm adding this code to the repository nfjn 
+
+        centerPanel.revalidate();
         centerPanel.remove(label1); // Remove label1
         centerPanel.remove(label2); // Remove label2
         centerPanel.repaint(); // Repaint the Center Panel 
         centerPanel.revalidate(); // Revalidate the Center Panel
         
         mainPanel.remove(centerPanel); // Remove the Center Panel 
-        
+        mainPanel.repaint(); // Repaint the Main Panel 
         mainPanel.revalidate(); // Revalidate the Main Panel 
 
         this.repaint(); // Repaint the JFrame
